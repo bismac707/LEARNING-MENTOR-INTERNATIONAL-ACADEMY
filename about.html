@@ -216,7 +216,7 @@
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 14px;
-      padding: 12px 26px;
+      padding: 11px 22px;
       border-radius: 6px;
       border: 2px solid var(--accent);
       cursor: pointer;
@@ -239,18 +239,17 @@
 
     /* Page Banner */
     .page-banner {
-      background: linear-gradient(105deg, rgba(140, 44, 63, 0.92), rgba(109, 31, 47, 0.85)),
-                  url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      background: linear-gradient(105deg, rgba(140, 44, 63, 0.92), rgba(140, 44, 63, 0.8)),
+                  url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
       color: var(--white);
-      padding: 85px 0;
+      padding: 75px 0;
       text-align: center;
     }
 
     .page-banner h2 {
-      font-size: 40px;
       color: var(--white);
-      margin-bottom: 12px;
-      font-weight: 800;
+      font-size: 40px;
+      margin-bottom: 10px;
     }
 
     .breadcrumb {
@@ -258,33 +257,21 @@
       align-items: center;
       gap: 10px;
       font-size: 14px;
-      background: rgba(255, 255, 255, 0.12);
-      padding: 6px 18px;
-      border-radius: 30px;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .breadcrumb a {
+      color: var(--accent);
+      font-weight: 500;
     }
 
     .breadcrumb a:hover {
-      color: var(--accent);
+      text-decoration: underline;
     }
 
-    .breadcrumb span {
-      color: var(--accent);
-      font-weight: 600;
-    }
-
-    /* Section Basics */
+    /* Sections */
     .section-padding {
       padding: 85px 0;
-    }
-
-    .bg-light {
-      background-color: var(--light-bg);
-    }
-
-    .section-header {
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto 50px;
     }
 
     .section-subtitle {
@@ -298,93 +285,100 @@
       margin-bottom: 8px;
     }
 
-    .section-header h2 {
-      font-size: 34px;
-      margin-bottom: 14px;
-    }
-
-    .section-header p {
-      color: var(--text-muted);
-      font-size: 15px;
-    }
-
-    /* Story Grid */
-    .story-grid {
+    .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 44px;
       align-items: center;
     }
 
-    .story-img {
+    .about-image-wrap {
       position: relative;
-    }
-
-    .story-img img {
       border-radius: 14px;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+      overflow: hidden;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
     }
 
-    .story-quote {
-      background: var(--primary);
-      color: var(--white);
-      padding: 20px 24px;
-      border-radius: 10px;
-      border-left: 5px solid var(--accent);
-      margin-top: -35px;
-      margin-left: 24px;
-      margin-right: 24px;
-      position: relative;
-      z-index: 2;
-      font-size: 14px;
-      font-style: italic;
+    .about-image-wrap img {
+      width: 100%;
+      height: 410px;
+      object-fit: cover;
     }
 
-    .story-content h2 {
+    .about-content h2 {
       font-size: 32px;
       margin-bottom: 16px;
     }
 
-    .story-content p {
+    .about-content p {
       color: var(--text-muted);
+      font-size: 15px;
       margin-bottom: 16px;
     }
 
-    /* Mission & Vision Cards */
+    .about-highlights {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin: 22px 0 28px;
+    }
+
+    .highlight-item {
+      background: var(--light-bg);
+      border-left: 4px solid var(--accent);
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-dark);
+    }
+
+    .highlight-item i {
+      color: var(--primary);
+      margin-right: 8px;
+    }
+
+    /* Mission & Vision */
+    .mv-section {
+      background-color: var(--light-bg);
+      padding: 80px 0;
+    }
+
     .mv-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
+      gap: 28px;
     }
 
     .mv-card {
       background: var(--white);
-      padding: 40px 34px;
-      border-radius: 14px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--border-color);
       border-top: 5px solid var(--primary);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
     }
 
-    .mv-card.accent-top {
+    .mv-card:nth-child(2) {
       border-top-color: var(--accent);
     }
 
     .mv-icon {
-      width: 60px;
-      height: 60px;
+      width: 52px;
+      height: 52px;
       border-radius: 12px;
-      background-color: rgba(140, 44, 63, 0.1);
+      background: rgba(140, 44, 63, 0.1);
       color: var(--primary);
+      font-size: 22px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 26px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
 
     .mv-card h3 {
-      font-size: 24px;
-      margin-bottom: 14px;
+      font-size: 22px;
+      margin-bottom: 12px;
     }
 
     .mv-card p {
@@ -392,53 +386,341 @@
       font-size: 15px;
     }
 
-    /* Core Values */
-    .values-grid {
+    /* Stats Strip */
+    .stats-strip {
+      background: var(--primary);
+      color: var(--white);
+      padding: 55px 0;
+    }
+
+    .stats-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 24px;
-    }
-
-    .value-box {
-      background: var(--white);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 30px 22px;
       text-align: center;
-      transition: all 0.3s ease;
     }
 
-    .value-box:hover {
-      border-color: var(--accent);
-      transform: translateY(-5px);
-      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.07);
+    .stat-box h3 {
+      color: var(--accent);
+      font-size: 36px;
+      margin-bottom: 6px;
     }
 
-    .value-box i {
-      font-size: 30px;
-      color: var(--accent-hover);
+    .stat-box p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1D1417;
+      color: rgba(255, 255, 255, 0.82);
+      padding: 70px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+      gap: 36px;
+      margin-bottom: 45px;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-size: 18px;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 40px;
+      height: 3px;
+      background-color: var(--accent);
+    }
+
+    .footer-col p {
+      font-size: 14px;
       margin-bottom: 16px;
     }
 
-    .value-box h4 {
-      font-size: 18px;
+    .footer-links li {
       margin-bottom: 10px;
-    }
-
-    .value-box p {
       font-size: 14px;
-      color: var(--text-muted);
     }
 
-    /* Leadership / Mentors */
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+    .footer-links a:hover {
+      color: var(--accent);
+      padding-left: 5px;
     }
 
-    .team-card {
-      background: var(--white);
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 10px 28px rgba(0, 0, 0,
+    .footer-contact li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 14px;
+    }
+
+    .footer-contact i {
+      color: var(--accent);
+      margin-top: 4px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 992px) {
+      .about-grid,
+      .mv-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--white);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        align-items: flex-start;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .page-banner h2 {
+        font-size: 30px;
+      }
+
+      .about-highlights {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-contact">
+        <a href="mailto:admin@learningmentoracademy.in"><i class="fa-solid fa-envelope"></i> admin@learningmentoracademy.in</a>
+        <a href="tel:+919846012345"><i class="fa-solid fa-phone"></i> +91 98460 12345</a>
+        <span><i class="fa-solid fa-location-dot"></i> Academic Campus, Calicut Road, Malappuram, Kerala</span>
+      </div>
+      <div class="top-socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-badge">LM</div>
+        <div class="logo-text">
+          <h1>Learning Mentor</h1>
+          <span>International Academy</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="course-grid.html">Courses</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog-details.html">News &amp; Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="btn-primary">Admissions Open</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h2>About Learning Mentor</h2>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>About Us</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Story -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80" alt="Mentorship and Collaborative Learning at Learning Mentor International Academy" />
+        </div>
+
+        <div class="about-content">
+          <span class="section-subtitle">Who We Are</span>
+          <h2>Structured Mentorship That Builds Lasting Confidence</h2>
+          <p>
+            Learning Mentor International Academy is dedicated to helping learners build strong academic fundamentals, logical problem-solving habits, and practical skills. We combine clear, step-by-step guidance with supportive mentoring tailored to each learner's pace.
+          </p>
+          <p>
+            From core mathematics and analytical reasoning to modern programming, data skills, and structured communication, our programs focus on genuine understanding rather than rote memorization.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> Step-by-Step Concept Clarity</div>
+            <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> Guided Practice &amp; Feedback</div>
+            <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> Practical &amp; Analytical Focus</div>
+            <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> Supportive Mentor Guidance</div>
+          </div>
+
+          <a href="course-grid.html" class="btn-primary">Explore Our Courses</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mv-section">
+    <div class="container">
+      <div class="mv-grid">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Our Mission</h3>
+          <p>
+            To deliver clear, accessible, and structured academic mentorship that empowers students to master foundational concepts, solve unfamiliar problems with confidence, and build disciplined study habits.
+          </p>
+        </div>
+
+        <div class="mv-card">
+          <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3>Our Vision</h3>
+          <p>
+            To nurture curious, analytical, and self-directed learners prepared for higher academics and real-world challenges through thoughtful guidance and continuous growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Strip -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <h3>8+</h3>
+          <p>Core Learning Tracks</p>
+        </div>
+        <div class="stat-box">
+          <h3>1:1 &amp; Small</h3>
+          <p>Guided Mentor Sessions</p>
+        </div>
+        <div class="stat-box">
+          <h3>100%</h3>
+          <p>Concept-First Approach</p>
+        </div>
+        <div class="stat-box">
+          <h3>Mon–Sat</h3>
+          <p>Dedicated Academic Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Learning Mentor Academy</h4>
+          <p>Empowering students through structured mentorship, international academic rigor, and practical innovation. Inventing and making it happen every day.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Academy</a></li>
+            <li><a href="course-grid.html">All Courses</a></li>
+            <li><a href="gallery.html">Campus Gallery</a></li>
+            <li><a href="blog-details.html">News &amp; Articles</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Portal &amp; Info</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Admissions Inquiry</a></li>
+            <li><a href="course-grid.html">Academic Calendar</a></li>
+            <li><a href="maintenance.html">Student Portal</a></li>
+            <li><a href="error.html">Resource Archive</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Details</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> <span>Academic Campus, Calicut Road, Malappuram, Kerala 676505</span></li>
+            <li><i class="fa-solid fa-phone"></i> <span>+91 98460 12345 / +91 483 273 4567</span></li>
+            <li><i class="fa-solid fa-envelope"></i> <span>admin@learningmentoracademy.in</span></li>
+            <li><i class="fa-solid fa-clock"></i> <span>Mon – Sat: 8:30 AM – 4:30 PM</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Learning Mentor International Academy. All Rights Reserved.</p>
+        <p>Designed with Poppins &amp; Montserrat Brand Guidelines</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
