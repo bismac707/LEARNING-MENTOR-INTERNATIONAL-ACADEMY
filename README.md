@@ -1,6 +1,6 @@
-# Learning Mentor International Academy (https://github.com/bismac707/LEARNING-MENTOR-INTERNATIONAL-ACADEMY.git
+# Learning Mentor International Academy
 
-A multi-page static website built for **Learning Mentor International Academy**, designed around structured academic mentorship, clear visual hierarchy, and responsive layouts.
+A multi-page static website built for **Learning Mentor International Academy**, designed around structured academic mentorship, clear visual hierarchy, and responsive layouts.https://github.com/bismac707/LEARNING-MENTOR-INTERNATIONAL-ACADEMY.git
 
 ## Brand & Visual Identity
 
